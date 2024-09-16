@@ -133,9 +133,9 @@ const Home = () => {
                 Sponsored By
             </h3>
             <div className='flex flex-col md:flex-row gap-10 items-center justify-center mt-10'>
-                <aside className='rounded-lg bg-[#1C1C1C] h-[200px] w-[200px] flex justify-center items-center'>Coming Soon</aside>
-                <aside className='rounded-lg bg-[#1C1C1C] h-[200px] w-[200px] flex justify-center items-center'>Coming Soon</aside>
-                <aside className='rounded-lg bg-[#1C1C1C] h-[200px] w-[200px] flex justify-center items-center'>Coming Soon</aside>
+                <aside className='rounded-lg bg-[#1C1C1C] text-white h-[200px] w-[200px] flex justify-center items-center'>Coming Soon</aside>
+                <aside className='rounded-lg bg-[#1C1C1C] text-white h-[200px] w-[200px] flex justify-center items-center'>Coming Soon</aside>
+                <aside className='rounded-lg bg-[#1C1C1C] text-white h-[200px] w-[200px] flex justify-center items-center'>Coming Soon</aside>
             </div>
         </section>
     </main>
