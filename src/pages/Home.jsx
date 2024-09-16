@@ -123,7 +123,7 @@ const Home = () => {
                 </BoxReveal>
             </div>
             <div className='rounded-lg bg-arcane-primary w-full md:w-[50%]'>
-                <video src='/videos/arcane.mp4' autoPlay loop muted className="w-full h-full object-cover rounded-lg">
+                <video src='/videos/arcane.mov' autoPlay loop muted className="w-full h-full object-cover rounded-lg">
                     Your browser does not support the video tag.
                 </video>
             </div>
