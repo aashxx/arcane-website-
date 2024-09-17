@@ -117,20 +117,40 @@ export const TECH_EVENTS = [
   {
     "name": "Promptopia",
     "img": "https://i.postimg.cc/RhYQvH37/DALL-E-2024-09-04-17-47-25-A-single-character-inspired-by-the-Arcane-web-series-style-working-on.webp",
-    "description": "Enter the realm of \"Promptopia,\" where imagination and technology converge in a thrilling 1-hour competition. In this unique event, teams will be tested across three rounds, each designed to push the limits of their creativity and technical skills. From envisioning art to bringing motion to life and coding solutions from scratch, \"Promptopia\" challenges participants to think, create, and innovate like never before.",
     "startTime": "11:30",
     "endTime": "12:45",
-    "winningCriteria": "Winners will be selected based on the overall performance across all rounds. Judging criteria include creativity, usability, adherence to the theme, and functionality.",
-    "rules": [
-      "Each team must consist of 2 members.",
-      "Prompts must be original and created during the event timeframe.",
-      "Teams will be allowed to use only the mentioned tools.",
-      "All submissions must be completed within the allocated time for each round.",
-      "Any form of cheating, plagiarism, or disruptive behavior will lead to disqualification.",
-      "Round 1: Accuracy of the generated image prompt compared to the original image.",
-      "Round 2: Judged based on UI.",
-      "Round 3: Judged based on the working and logic behind the application."
-    ],
+    "description": "Enter the realm of 'Promptopia,' where imagination and technology converge in a thrilling 1.5-hour competition. In this unique event, teams will be tested across two rounds, each designed to push the limits of their creativity and technical skills. From envisioning art to developing functional code, 'Promptopia' challenges participants to think, create, and innovate like never before.",
+  "rounds": [
+    {
+      "roundName": "Visionary Recollection",
+      "duration": "30 Minutes (3 Rounds of 10 minutes each)",
+      "description": "Participants will be shown an image on the screen for 1 minute in each round, after which it will disappear. Teams must then generate a prompt to recreate the image as accurately as possible.",
+      "points": [
+        { "type": "Basic Image", "points": "20 Points" },
+        { "type": "Intermediate Image", "points": "30 Points" },
+        { "type": "Advanced Image", "points": "50 Points" }
+      ]
+    },
+    {
+      "roundName": "Code Conception",
+      "duration": "40 Minutes",
+      "description": "Teams will be presented with a coding challenge that requires them to develop a website using HTML & CSS through a prompt-based approach. A UI website template will be shown for 5 minutes, and teams must focus on generating precise, functional code and an appealing, unique UI.",
+      "points": [
+        { "type": "UI Design & Functionality", "points": "100 Points" }
+      ]
+    }
+  ],
+  "rules": [
+    "Each team must consist of 2 members.",
+    "Prompts must be original and created during the event timeframe.",
+    "Teams will be allowed to use only the mentioned tools.",
+    "All submissions must be completed within the allocated time for each round.",
+    "Any form of cheating, plagiarism, or disruptive behavior will lead to disqualification."
+  ],
+  "winningCriteria": [
+    "Round 1 (Image Generation): Accuracy of the generated image prompt compared to the original image.",
+    "Round 2 (Code Generation): Judged based on UI design, uniqueness, and innovative ideas."
+  ],
     "isMultipleRounds": false,
     "coordinators": {
       "student": [
