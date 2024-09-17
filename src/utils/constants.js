@@ -454,7 +454,7 @@ export const NON_TECH_EVENTS = [
     "name": "BGMI",
     "img": "https://i.postimg.cc/Y9bmz8Px/DALL-E-2024-09-04-19-14-37-A-scene-inspired-by-the-Arcane-web-series-style-depicting-two-characte.webp",
     "description": "BGMI is a premier esports tournament showcasing the top teams in Battlegrounds Mobile India (BGMI). This high-octane competition brings together elite players from across the college to battle it out in one of the most popular mobile battle royale games. With intense gameplay and high stakes, the tournament is a celebration of skill, strategy, and teamwork.",
-    "startTime": "09:30",
+    "startTime": "11:00",
     "endTime": "12:30",
     "winningCriteria": "The team with the highest points will be considered the winner.",
     "rules": [
@@ -466,7 +466,11 @@ export const NON_TECH_EVENTS = [
       "Organizers reserve the right to accept or reject any entry without stating a reason.",
       "Participants are requested to remain ready at least 15 minutes prior to the start of any match. Late entries would not be allowed."
     ],
-    "isMultipleRounds": false,
+    "isMultipleRounds": true,
+    "secondRound": {
+      "startTime": "13:30",
+      "endTime": "15:00"
+    },
     "coordinators": {
       "student": [
         { "name": "AKSHAY", "phone": "7904508275" },
