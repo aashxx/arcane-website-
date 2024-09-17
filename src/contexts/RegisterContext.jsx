@@ -15,7 +15,7 @@ const RegisterState = ({ children }) => {
         phone: "",
         degree: "",
         year: "",
-        emailVerified: false,
+        // emailVerified: false,
         events: [],
         timestamp: dayjs().format('DD/MM/YYYY')
     });
@@ -25,7 +25,7 @@ const RegisterState = ({ children }) => {
         if(participant.email) {
             setParticipant({
                 ...participant,
-                emailVerified: false,
+                // emailVerified: false,
                 events: []
             });
         }
@@ -46,10 +46,10 @@ const RegisterState = ({ children }) => {
             toast.error("Invalid phone number");
             return false;
         }
-        if (!participant.emailVerified) {
-          toast.error("Email not verified");
-          return false;
-        }
+        // if (!participant.emailVerified) {
+        //   toast.error("Email not verified");
+        //   return false;
+        // }
         return true;
     };
 

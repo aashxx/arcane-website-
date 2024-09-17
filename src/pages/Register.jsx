@@ -172,13 +172,14 @@ const Register = () => {
           <Input name="fullName" value={participant.fullName} onChange={handleChange} placeholder={'Full Name'} />
           <Input name="college" value={participant.college} onChange={handleChange} placeholder={'College / University'} />
           <aside className='md:w-[48%] w-full relative'>
-            {participant.emailVerified ? (
+            {/* {participant.emailVerified ? (
               <aside className='bg-arcane-primary rounded-full absolute p-1 right-3 top-2'>
                 <FaCheck className='text-white' />
               </aside>
-            ) : participant.email.includes('@') && (
-              <>
-                <AlertDialog>
+            ) :  */}
+            {/* participant.email.includes('@') && (  */}
+              {/* <> */}
+                {/* <AlertDialog>
                   <AlertDialogTrigger asChild>
                     <button className='text-arcane-primary text-md absolute font-semibold font-expletus-sans right-4 top-2'>
                       Verify
@@ -196,8 +197,8 @@ const Register = () => {
                       <AlertDialogAction onClick={() => sendOTP(participant.email)}>Continue</AlertDialogAction>
                     </AlertDialogFooter>
                   </AlertDialogContent>
-                </AlertDialog>
-                {shouldOpenDialog && (
+                </AlertDialog> */}
+                {/* {shouldOpenDialog && (
                   <Dialog open={shouldOpenDialog} onOpenChange={setShouldOpenDialog}>
                     <DialogContent className="font-expletus-sans">
                       <DialogHeader>
@@ -227,10 +228,10 @@ const Register = () => {
                         </p>
                       </DialogFooter>
                     </DialogContent>
-                  </Dialog>
-                )}
+                  </Dialog> */}
+                {/* )}
               </>
-            )}
+            )} */}
             <input className={'flex h-10 w-full rounded-md font-expletus-sans pr-16 bg-[#1c1c1c] px-3 py-2 text-md file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-[gray] outline-none text-white disabled:cursor-not-allowed disabled:opacity-50 focus:border focus:border-arcane-primary'} name="email" value={participant.email} onChange={handleChange} placeholder={'Email'} />
           </aside>
           <Input name="phone" value={participant.phone} onChange={handleChange} placeholder={'Phone Number'} />
