@@ -247,54 +247,6 @@ const Register = () => {
               </SelectGroup>
             </SelectContent>
           </Select>
-          <div className="flex items-center md:w-[48%] w-full gap-2 text-white">
-            <Checkbox
-              checked={participant.food !== "No"}
-              onCheckedChange={(checked) =>
-                setParticipant({
-                  ...participant,
-                  food: checked ? "Non Veg" : "No"
-                })
-              }
-              id="food"
-            />
-            <label
-              htmlFor="food"
-              className="text-[gray] text-[13px] leading-3 md:text-sm font-expletus-sans"
-            >
-              Do you want refreshments and lunch? Additional charges applicable.
-            </label>
-          </div>
-
-          <div className="md:w-[48%] w-full">
-            {participant.food === "Non Veg" || participant.food === "Veg" ? (
-              <RadioGroup
-                onValueChange={(val) =>
-                  setParticipant({ ...participant, food: val })
-                }
-                value={participant.food} // Set the value dynamically
-              >
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Non Veg" id="r1" />
-                  <label
-                    htmlFor="r1"
-                    className="text-md text-white font-expletus-sans"
-                  >
-                    Non Veg
-                  </label>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <RadioGroupItem value="Veg" id="r2" />
-                  <label
-                    htmlFor="r2"
-                    className="text-md text-white font-expletus-sans"
-                  >
-                    Veg
-                  </label>
-                </div>
-              </RadioGroup>
-            ) : null}
-          </div>
         </div>
         <h3 className='text-white text-2xl font-valorax text-center my-10'>Select Events</h3>
         <div className='flex gap-5 w-full items-start justify-center flex-wrap mt-10'>
