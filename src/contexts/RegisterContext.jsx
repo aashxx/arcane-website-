@@ -15,7 +15,6 @@ const RegisterState = ({ children }) => {
         phone: "",
         degree: "",
         year: "",
-        food: "No",
         emailVerified: false,
         events: [],
         timestamp: dayjs().format('DD/MM/YYYY')
@@ -62,10 +61,6 @@ const RegisterState = ({ children }) => {
 
         if (selectedTechEvents.length > 0 && selectedNonTechEvents.length > 0) {
           price = 200;
-        }
-
-        if (participant.food !== "No") {
-          price += 50;
         }
       
         return price;

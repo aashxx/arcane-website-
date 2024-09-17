@@ -51,7 +51,6 @@ const PaymentState = ({ children }) => {
                 phone: "",
                 degree: "",
                 year: "",
-                food: "No",
                 emailVerified: false,
                 events: []
             });

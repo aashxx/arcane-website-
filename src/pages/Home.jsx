@@ -72,8 +72,11 @@ const Home = () => {
                 <div className='bg-arcane-primary z-20 rounded-lg relative p-4 md:p-10 md:h-[230px] mt-14 md:mt-20 md:mx-32 mx-4'>
                     <img className='max-h-full hidden md:block absolute top-0 right-0' src={'/images/ben-card.png'} alt="AV" />
                     <h3 className='font-valorax text-center md:text-left text-white text-2xl md:text-4xl uppercase z-30'>
-                        Technical & <br /><span className='text-black'>Non</span> Technical Events
+                        win cash prices <br />upto <span className='text-black'>Rs.2000</span>
                     </h3>
+                    <p className='text-[#d3d3d3] font-expletus-sans text-sm'>
+                        *Certificates will be provided
+                    </p>
                     <aside className='flex md:justify-between justify-center items-center mt-6'>
                         <a href={'/register'} className='px-10 py-2 text-white bg-black z-20'>
                             Register Now

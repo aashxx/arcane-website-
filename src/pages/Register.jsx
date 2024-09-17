@@ -353,14 +353,6 @@ const Register = () => {
                           <aside>INR {participant.events.filter(event => TECH_EVENTS.some(e => e.name === event)).length > 0 && participant.events.filter(event => NON_TECH_EVENTS.some(e => e.name === event)).length > 0 ? '100.00' : '150.00'}</aside>
                         </div>
                       )}
-
-                      {/* Refreshments & Lunch */}
-                      {participant.food !== "No" && (
-                        <div className="flex justify-between text-sm mt-4">
-                          <aside className='w-[70%]'>Refreshments & Lunch ({participant.food})</aside>
-                          <aside>INR 50.00</aside>
-                        </div>
-                      )}
                     </div>
 
                     {/* Total Price */}
