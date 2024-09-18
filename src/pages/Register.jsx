@@ -249,7 +249,11 @@ const Register = () => {
             </SelectContent>
           </Select>
           <h3 className='text-[#d3d3d3] font-expletus-sans'>
-            <span className='font-bold'>Note: </span>Food will be provided to all registered participants
+            Note
+            <ul className='list-disc ml-6 text-sm'>
+              <li>Even for team events, individual registrations are applicable</li>
+              <li>Food will be provided to all registered participants</li>
+            </ul>
           </h3>
         </div>
         <h3 className='text-white text-2xl font-valorax text-center my-10'>Select Events</h3>
