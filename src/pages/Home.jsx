@@ -15,13 +15,12 @@ const Home = () => {
     return (
         <main className='relative bg-arcane-primary font-expletus-sans'>
             <section style={{ background: "url('/images/hero.png') no-repeat center center/cover"}} className='md:h-screen w-full px-4 flex flex-col justify-center items-center gap-5'>
-            <aside className='flex gap-4 items-center md:mt-[unset]'>
-                        <img className='h-[70px] md:h-[70px]' src="/images/csea.png" alt="csea" />
-                        <img className=' -md:ml-[unset] w-[150px]' src="https://i.postimg.cc/bw693pjC/Untitled-design-2-removebg-preview-1.png" alt="crescent" />
-                        <img className='h-[50px]' src="/images/acm.png" alt="acm" />
-                    </aside>
+                <aside className='flex gap-4 items-center md:mt-[unset] pt-32 md:pt-[unset]'>
+                    <img className='h-[70px] md:h-[70px]' src="/images/csea.png" alt="csea" />
+                    <img className=' -md:ml-[unset] w-[150px]' src="https://i.postimg.cc/bw693pjC/Untitled-design-2-removebg-preview-1.png" alt="crescent" />
+                    <img className='h-[50px]' src="/images/acm.png" alt="acm" />
+                </aside>
                 <div className="z-10 flex items-center justify-center mb-16">
-                    
                     <div
                         className={cn(
                         "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",

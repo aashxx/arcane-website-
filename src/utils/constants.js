@@ -460,7 +460,7 @@ export const NON_TECH_EVENTS = [
         "Mrs. Pandiyavathi Thendral"
       ]
     },
-    "participation": "Individual"
+    "participation": "3 - 4 members per team"
   },
   {
     "name": "BGMI",
