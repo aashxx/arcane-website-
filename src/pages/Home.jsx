@@ -17,7 +17,7 @@ const Home = () => {
             <section style={{ background: "url('/images/hero.png') no-repeat center center/cover"}} className='md:h-screen w-full px-4 flex flex-col justify-center items-center gap-5'>
                 <aside className='flex gap-4 items-center md:mt-[unset] pt-32 md:pt-[unset]'>
                     <img className='h-[70px] md:h-[70px]' src="/images/csea.png" alt="csea" />
-                    <img className=' -md:ml-[unset] w-[150px]' src="https://i.postimg.cc/bw693pjC/Untitled-design-2-removebg-preview-1.png" alt="crescent" />
+                    <img className=' -md:ml-[unset] w-[150px]' src="https://i.postimg.cc/6pF6n3hW/Crescent-Logo-with-TM-white.png" alt="crescent" />
                     <img className='h-[50px]' src="/images/acm.png" alt="acm" />
                 </aside>
                 <div className="z-10 flex items-center justify-center mb-16">
