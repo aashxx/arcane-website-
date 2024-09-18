@@ -17,7 +17,7 @@ const Contact = () => {
                     <aside className='flex flex-col md:gap-10 gap-8 text-xl font-expletus-sans px-6 md:px-10 py-12 rounded-md bg-[#252526] w-[370px] md:w-[370px]'>
                         <p className='flex gap-2 items-center'>
                             <IoMdMail />
-                            arcane@crescent.education
+                            csearcane2024@gmail.com
                         </p>
                         <p className='flex gap-2 items-center'>
                             <IoMdCall />

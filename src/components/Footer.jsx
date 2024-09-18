@@ -87,7 +87,7 @@ const Footer = () => {
                 <li>
                   <a href="mailto:" target='blank' className="hover:text-white flex items-center gap-1">
                     <IoMail />
-                    arcane@crescent.education
+                    csearcane2024@gmail.com
                   </a>
                 </li>
                 <li>
