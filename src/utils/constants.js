@@ -41,7 +41,8 @@ export const TECH_EVENTS = [
         "Mrs. S.M. Shifana",
         "Mrs. C. Tamilarasi"
       ]
-    }
+    },
+    "participation": "Individual "
   },
   {
     "name": "Miniathon",
@@ -77,7 +78,8 @@ export const TECH_EVENTS = [
         "Mrs. H. Kamarunnisha",
         "Mrs. D. Bala Gayathri"
       ]
-    }
+    },
+    "participation": "Team of 2"
   },
   {
     "name": "Paper Presentation",
@@ -112,7 +114,8 @@ export const TECH_EVENTS = [
         "Mr. S.R. Senthil Kumar",
         "Mrs. Amsavalli S."
       ]
-    }
+    },
+    "participation": "1 - 2 members per team"
   },
   {
     "name": "Promptopia",
@@ -166,7 +169,8 @@ export const TECH_EVENTS = [
         "Mr. V. Balaji",
         "Mrs. P. Usha"
       ]
-    }
+    },
+    "participation": "Team of 2"
   },
   {
     "name": "Tech Quiz",
@@ -197,7 +201,8 @@ export const TECH_EVENTS = [
         "Dr. A. Radhika",
         "Mrs. Sivasankari"
       ]
-    }
+    },
+    "participation": "1 - 3 member team"
   },
   {
     "name": "Sector 6ix",
@@ -224,7 +229,8 @@ export const TECH_EVENTS = [
         "Ms. Khathijath Fariha",
         "Mrs. Preethi.C"
       ]
-    }
+    },
+    "participation": "3 - 4 member team"
   },
   {
     "name": "Figma Fiesta",
@@ -253,7 +259,8 @@ export const TECH_EVENTS = [
         "Mrs. A. Snega",
         "Mrs. C. Jeeva"
       ]
-    }
+    },
+    "participation": "Individual"
   },
   {
     "name": "Coding Contest",
@@ -320,8 +327,9 @@ export const TECH_EVENTS = [
         "elimination": "8 contestants",
         "description": "A dynamic coding round where you’ll tackle three different problem statements, but there's a twist—when a buzzer rings, you must immediately stop your current task and shift to the next one, no matter where you are in your code. Each buzzer will signal a particular problem, and the buzzers can go off at any moment, keeping you on your toes! Your goal is to complete as much of each problem as possible before the next buzzer sounds."
       }
-    ]
-  }
+    ],
+    "participation": "Individual"
+  },
 ];
 
 export const NON_TECH_EVENTS = [
@@ -353,7 +361,8 @@ export const NON_TECH_EVENTS = [
         "Mrs. P. Usha",
         "Mrs. Noor Fazla"
       ]
-    }
+    },
+    "participation": "2 - 3 member team"
   },
   {
     "name": "Connexions",
@@ -386,7 +395,8 @@ export const NON_TECH_EVENTS = [
         "Dr. I. Karthiga",
         "Dr. S. Varsha Vardhini"
       ]
-    }
+    },
+    "participation": "Team of 2"
   },
   {
     "name": "Twenty 20",
@@ -420,7 +430,8 @@ export const NON_TECH_EVENTS = [
         "Mr. S.N. Mohamed Irfan",
         "Mr. R. Ram Deepak"
       ]
-    }
+    },
+    "participation": "3 member team"
   },
   {
     "name": "Treasure Hunt",
@@ -448,7 +459,8 @@ export const NON_TECH_EVENTS = [
         "Dr. M. Mohamed Thaha",
         "Mrs. Pandiyavathi Thendral"
       ]
-    }
+    },
+    "participation": "Individual"
   },
   {
     "name": "BGMI",
@@ -482,7 +494,8 @@ export const NON_TECH_EVENTS = [
         "Mr. P. Nehru",
         "Mrs. M. Latha"
       ]
-    }
+    },
+    "participation": "4 member team"
   },
   {
     "name": "Valorant",
@@ -512,7 +525,8 @@ export const NON_TECH_EVENTS = [
         "Mrs. T. Valliammal",
         "Mrs. S. Hemalatha"
       ]
-    }
+    },
+    "participation": "5 member team"
   },
   {
     "name": "FIFA",
@@ -544,15 +558,16 @@ export const NON_TECH_EVENTS = [
         "Mrs. S. Delhirani",
         "Mrs. A. Sulthana Rashya Begam"
       ]
-    }
+    },
+    "participation": "Individual"
   }
 ];
 
 export const CLUB_CARDS = [
   {
     img0: "https://i.postimg.cc/PrkCLf95/DALL-E-2024-09-11-00-00-52-A-detailed-futuristic-cyberpunk-inspired-depiction-of-the-Crescent-C.webp",
-    img: "https://i.postimg.cc/KY1Y7Wgn/Untitled-design-4-1-removebg-preview.png",
-    name: "Crescent Cybertronics Security Club",
+    img: "https://i.postimg.cc/13tMwfN7/Untitled-design-2-1-removebg-preview-1.png",
+    name: "Cyber Security Club",
   },
   {
     img0: "https://i.postimg.cc/tR61Cnrc/DALL-E-2024-09-11-00-02-35-A-futuristic-and-high-tech-depiction-of-the-CSE-Coding-Club-featuring.webp",
@@ -578,6 +593,11 @@ export const CLUB_CARDS = [
     img0: "https://i.postimg.cc/tTZs6s9Y/DALL-E-2024-09-11-00-11-08-A-futuristic-and-tech-centric-depiction-of-the-Neural-Techgenix-Club.webp",
     img: "https://i.postimg.cc/BQCtJH01/Untitled-design-2-1-removebg-preview.png",
     name: "Neural Techgenix Club",
+  },
+  {
+    img0: "https://i.postimg.cc/tTZs6s9Y/DALL-E-2024-09-11-00-11-08-A-futuristic-and-tech-centric-depiction-of-the-Neural-Techgenix-Club.webp",
+    img: "https://i.postimg.cc/wjG2VgXq/IMG-20240814-WA0028-1-removebg-preview.png",
+    name: "Social Awareness Club",
   }
 ];
 

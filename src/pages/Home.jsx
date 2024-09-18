@@ -14,8 +14,14 @@ import BoxReveal from '@/components/magicui/box-reveal';
 const Home = () => {
     return (
         <main className='relative bg-arcane-primary font-expletus-sans'>
-            <section style={{ background: "url('/images/hero.png') no-repeat center center/cover"}} className='md:h-screen pt-32 w-full px-4 flex flex-col justify-center items-center gap-5'>
+            <section style={{ background: "url('/images/hero.png') no-repeat center center/cover"}} className='md:h-screen w-full px-4 flex flex-col justify-center items-center gap-5'>
+            <aside className='flex gap-4 items-center md:mt-[unset]'>
+                        <img className='h-[70px] md:h-[70px]' src="/images/csea.png" alt="csea" />
+                        <img className=' -md:ml-[unset] w-[150px]' src="https://i.postimg.cc/Jn8nVW1Z/Whats-App-Image-2024-09-18-at-12-03-12-PM-removebg-preview.png" alt="crescent" />
+                        <img className='h-[50px]' src="/images/acm.png" alt="acm" />
+                    </aside>
                 <div className="z-10 flex items-center justify-center mb-16">
+                    
                     <div
                         className={cn(
                         "group rounded-full border border-black/5 bg-neutral-100 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-900 dark:hover:bg-neutral-800",
@@ -45,14 +51,14 @@ const Home = () => {
                     </Link>
                 </div>
                 <div className='mt-6'>
-                    <h4 className='text-white text-center text-xl font-medium'>
+                    {/* <h4 className='text-white text-center text-xl font-medium'>
                         Supported By
-                    </h4>
-                    <aside className='flex gap-4 items-center mt-5 md:mt-[unset]'>
+                    </h4> */}
+                    {/* <aside className='flex gap-4 items-center mt-5 md:mt-[unset]'>
                         <img className='h-[130px] md:h-[150px]' src="/images/csea.png" alt="csea" />
-                        <img className='h-[100px] -ml-5 -md:ml-[unset]' src="/images/crescent.png" alt="crescent" />
+                        <img className='-ml-5 -md:ml-[unset] w-[300px]' src="https://i.postimg.cc/Jn8nVW1Z/Whats-App-Image-2024-09-18-at-12-03-12-PM-removebg-preview.png" alt="crescent" />
                         <img className='h-[100px] md:ml-6' src="/images/acm.png" alt="acm" />
-                    </aside>
+                    </aside> */}
                 </div>
             </section>
             <section className='bg-[#171717] py-10 z-20 relative'>

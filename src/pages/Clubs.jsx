@@ -10,17 +10,17 @@ const Clubs = () => {
         Clubs
       </motion.h2>
       <div className='flex flex-col flex-wrap items-center justify-center gap-5 md:gap-12 py-12 md:flex-row md:px-32 px-6'>
-        {/* {
+        {
           CLUB_CARDS.map((club, index) => (
-            <motion.div key={index} {...ANIMATIONS.up} className='md:w-[30%] h-[150px] w-full'>
-              <Link to={`/clubs/${club.name}`} className="relative flex w-full max-h-hull items-center justify-start group">
+            <motion.div key={index} {...ANIMATIONS.up} className='md:w-[20%] h-[150px] w-full'>
+              <aside className="relative flex w-full max-h-hull items-center justify-start group">
                 <img src={club.img} alt={club.name} className="w-full h-[150px] rounded-lg object-contain" />
-                <div className="absolute inset-0 transition-opacity duration-300 rounded-lg opacity-0 bg-gradient-to-t from-arcane-primary to-transparent md:group-hover:opacity-60" />
-              </Link>
+                <div className="absolute inset-0 transition-opacity duration-300 rounded-lg opacity-0 bg-gradient-to-t from-arcane-primary to-transparent" />
+              </aside>
             </motion.div>
           ))
-        } */}
-        {
+        }
+        {/* {
           CLUB_CARDS.map((club, index) => (
             <motion.div key={index} {...ANIMATIONS.up} className='md:w-[30%] w-full'>
               <Link to={`/clubs/${club.name}`} className="relative flex w-full items-center justify-start group">
@@ -32,7 +32,7 @@ const Clubs = () => {
               </Link>
             </motion.div>
           ))
-        }
+        } */}
       </div>
     </main>
   )

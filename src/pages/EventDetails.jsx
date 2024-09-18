@@ -61,6 +61,12 @@ const EventDetails = () => {
         </div>
       </section>
       <section className='flex flex-col gap-3 md:w-[70%] w-full mt-4 md:mt-0'>
+      <h2 className="text-3xl font-valorax text-arcane-primary">
+          Participation
+        </h2>
+        <p className="text-[#d3d3d3] text-[0.9rem] text-justify">
+          {event.participation}
+        </p>
         <h2 className="text-3xl font-valorax text-arcane-primary">
           Description
         </h2>
