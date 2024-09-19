@@ -242,6 +242,7 @@ const Register = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectGroup>
+<SelectItem value="first">I</SelectItem>
                 <SelectItem value="second">II</SelectItem>
                 <SelectItem value="third">III</SelectItem>
                 <SelectItem value="fourth">IV</SelectItem>
