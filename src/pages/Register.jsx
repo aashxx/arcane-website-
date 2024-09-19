@@ -251,7 +251,8 @@ const Register = () => {
           <h3 className='text-[#d3d3d3] font-expletus-sans'>
             Note
             <ul className='list-disc ml-6 text-sm'>
-              <li>Even for team events, individual registrations are applicable</li>
+              <li>All must register and pay individually for team events as well</li>
+              <li>Even if you don't have a team, register individually and you will be patched with other teams during event</li>
               <li>Food will be provided to all registered participants</li>
             </ul>
           </h3>
