@@ -42,7 +42,7 @@ const Payment = () => {
             const result = await Tesseract.recognize(imageFile, 'eng');
             const text = result.data.text;
             const upiId = extractUpiTransactionId(text);
-            const arcaneCheck = text.includes("irshadmm2003-1@okhdfcbank");
+            const arcaneCheck = text.includes("irshadmm2003-1@okaxis");
 
             setPayment((prevPayment) => ({
                 ...prevPayment,
@@ -51,7 +51,7 @@ const Payment = () => {
             }));
             
             if (!arcaneCheck) {
-                toast.error("Transaction is not authentic");
+                toast.error("Reciever's transaction ID not visible");
                 setArcaneCheck(false);
             } 
 
@@ -120,6 +120,9 @@ const Payment = () => {
                     </Button>
                 )
             }
+            <div className='text-center text-sm font-bold text-[gray]'>
+                Note: Transaction ID and reciever's UPI ID must be visible in screenshot
+            </div>
         </DialogContent>
     );
 };
