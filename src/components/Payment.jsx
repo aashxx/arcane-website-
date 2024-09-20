@@ -42,7 +42,7 @@ const Payment = () => {
             const result = await Tesseract.recognize(imageFile, 'eng');
             const text = result.data.text;
             const upiId = extractUpiTransactionId(text);
-            const arcaneCheck = text.includes("irshadmm2003-1@okaxis");
+            const arcaneCheck = text.includes("irshadmm2003-1@okicici");
 
             setPayment((prevPayment) => ({
                 ...prevPayment,

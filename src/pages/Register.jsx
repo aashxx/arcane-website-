@@ -258,7 +258,10 @@ const Register = () => {
             </ul>
           </h3>
         </div>
-        <h3 className='text-white text-2xl font-valorax text-center my-10'>Select Events</h3>
+        <h3 className='text-white text-2xl font-valorax text-center my-10 mb-3'>Select Events</h3>
+        <h2 className='text-white font-expletus-sans text-center my-10'>
+          For more information, <a className='text-arcane-primary hover:underline' href="https://drive.google.com/uc?export=download&id=16sGrZQ651CszXT-Nm4yYgdxPb7FL2Cg7" download>Click here</a>
+        </h2>
         <div className='flex gap-5 w-full items-start justify-center flex-wrap mt-10'>
           <aside className='flex flex-col md:w-[48%] w-full justify-center items-center gap-4'>
             <h4 className='text-xl font-valorax text-center text-arcane-primary'>Technical Events</h4>
