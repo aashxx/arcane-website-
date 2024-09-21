@@ -12,7 +12,7 @@ const RequestCard = ({ participant }) => {
 
     return (
         <motion.article {...ANIMATIONS.up} className='bg-[#1c1c1c] font-expletus-sans items-center rounded-lg flex w-full justify-between gap-4 border border-arcane-primary p-5'>
-            <div>
+            <div className='w-[75%]'>
                 <h4 className='text-white font-bold text-xl'>
                     {participant.fullName}
                 </h4>
@@ -22,7 +22,7 @@ const RequestCard = ({ participant }) => {
             </div>
             <Dialog>
                 <DialogTrigger asChild>
-                    <Button className={'w-[100px]'}>Open</Button>
+                    <Button className={'w-[25%]'}>Open</Button>
                 </DialogTrigger>
                 <DialogContent className={'font-expletus-sans'}>
                     <DialogHeader>
