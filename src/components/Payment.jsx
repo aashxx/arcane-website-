@@ -15,7 +15,6 @@ const Payment = () => {
     const { calculatePrice, setLoading } = useContext(RegisterContext);
     const { payment, setPayment, submitRequest } = useContext(PaymentContext);  
 
-    const [arcaneCheck, setArcaneCheck] = useState(true);
     const [upiId, setUpiId] = useState(null);
     const upiRef = ref(realdb, `upiId`);
 
@@ -60,19 +59,13 @@ const Payment = () => {
         try {
             const result = await Tesseract.recognize(imageFile, 'eng');
             const text = result.data.text;
-            const upiId = extractUpiTransactionId(text);
-            const arcaneCheck = text.includes("irshadmm2003-1@okaxis");
+            const upitransactionId = extractUpiTransactionId(text);
 
             setPayment((prevPayment) => ({
                 ...prevPayment,
-                transactionId: upiId || 'Not Found',
+                transactionId: upitransactionId || 'Not Found',
                 transactionScreenshot: imageFile
             }));
-            
-            if (!arcaneCheck) {
-                toast.error("Reciever's transaction ID not visible");
-                setArcaneCheck(false);
-            } 
 
         } catch (error) {
             console.error('Error extracting text:', error);
@@ -133,7 +126,7 @@ const Payment = () => {
                 )
             }
             {
-                payment.transactionId !== '' && payment.transactionId !== 'Not Found' && arcaneCheck && (
+                payment.transactionId !== '' && payment.transactionId !== 'Not Found' && (
                     <Button onClick={submitRequest} className={'hover:text-arcane-primary w-[150px] mx-auto'}>
                         Submit
                     </Button>
