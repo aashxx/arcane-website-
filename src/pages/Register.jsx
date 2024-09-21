@@ -249,6 +249,34 @@ const Register = () => {
               </SelectGroup>
             </SelectContent>
           </Select>
+          <div className="w-full px-3 text-white font-expletus-sans text-md">
+              <RadioGroup
+                onValueChange={(val) =>
+                  setParticipant({ ...participant, food: val })
+                }
+                value={participant.food} // Set the value dynamically
+              >
+                Meal Preference
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem value="Non Veg" id="r1" />
+                  <label
+                    htmlFor="r1"
+                    className="text-md text-white font-expletus-sans"
+                  >
+                    Non Veg
+                  </label>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <RadioGroupItem value="Veg" id="r2" />
+                  <label
+                    htmlFor="r2"
+                    className="text-md text-white font-expletus-sans"
+                  >
+                    Veg
+                  </label>
+                </div>
+              </RadioGroup>
+          </div>
           <h3 className='text-[#d3d3d3] font-expletus-sans'>
             Note
             <ul className='list-disc ml-6 text-sm'>

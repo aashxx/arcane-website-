@@ -16,6 +16,7 @@ const RegisterState = ({ children }) => {
         degree: "",
         year: "",
         // emailVerified: false,
+        food: "",
         events: [],
         timestamp: dayjs().format('DD/MM/YYYY')
     });
@@ -42,6 +43,12 @@ const RegisterState = ({ children }) => {
           toast.error("All personal details are required");
           return false;
         }
+
+        if(!participant.food) {
+            toast.error("Give meal preference");
+            return false;
+        }
+
         if(!/^\d{10}$/.test(participant.phone)) {
             toast.error("Invalid phone number");
             return false;
