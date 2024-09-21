@@ -7,6 +7,8 @@ import Tesseract from 'tesseract.js';
 import { Button } from './ui/button';
 import { toast } from 'react-hot-toast';
 import { PaymentContext } from '@/contexts/PaymentContext';
+import { get, ref } from 'firebase/database';
+import { realdb } from '@/lib/firebase';
 
 const Payment = () => {
 
@@ -14,6 +16,23 @@ const Payment = () => {
     const { payment, setPayment, submitRequest } = useContext(PaymentContext);  
 
     const [arcaneCheck, setArcaneCheck] = useState(true);
+    const [upiId, setUpiId] = useState(null);
+    const upiRef = ref(realdb, `upiId`);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const snapshot = await get(upiRef);
+                if(snapshot.exists()) {
+                    setUpiId(snapshot.val().upiId);
+                }
+            } catch (error) {
+                console.error("Error fetching UPI ID", error);
+            }
+        }
+        
+        fetchData();
+    }, []);
 
     useEffect(() => {
         if (payment.transactionId === 'Not Found') {
@@ -21,7 +40,7 @@ const Payment = () => {
         }
     }, [payment.transactionId]);
 
-    const UPI_URL = `upi://pay?pa=${import.meta.env.VITE_BANK_UPI_ID}&pn=${import.meta.env.VITE_PAYEE_NAME}&am=${calculatePrice()}&cu=INR`;
+    const UPI_URL = `upi://pay?pa=${upiId}&pn=${import.meta.env.VITE_PAYEE_NAME}&am=${calculatePrice()}&cu=INR`;
 
     const renderImagePreview = (image) => {
         if (image) {

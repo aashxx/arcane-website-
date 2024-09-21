@@ -6,6 +6,8 @@ import { db } from '@/lib/firebase';
 import RequestCard from '../components/RequestCard';
 import Loader from '@/components/Loader';
 import { RegisterContext } from '@/contexts/RegisterContext';
+import ChangeUPI from '../components/ChangeUPI';
+
 
 const Admin = () => {
 
@@ -48,6 +50,7 @@ const Admin = () => {
                     </h4>
                 )
             }
+            <ChangeUPI />
         </main>
     )
 }
