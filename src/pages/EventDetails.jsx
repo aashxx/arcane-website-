@@ -37,6 +37,14 @@ const EventDetails = () => {
         </div>
         <div className='rounded-lg bg-arcane-primary py-3 px-7'>
           <h4 className='text-white font-bold'>
+            Timings
+          </h4>
+          <p className='text-white font-bold text-xl'>
+            {event.startTime} - {event.endTime}
+          </p>
+        </div>
+        <div className='rounded-lg bg-arcane-primary py-3 px-7'>
+          <h4 className='text-white font-bold'>
             Faculty Coordinators
           </h4>
           <ul className='text-white mt-2'>

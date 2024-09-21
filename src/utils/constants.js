@@ -205,7 +205,7 @@ export const TECH_EVENTS = [
     "participation": "1 - 3 member team"
   },
   {
-    "name": "Sector 6ix",
+    "name": "Sector 6ix (Escape Room)",
     "img": "https://i.postimg.cc/FKbM19Vd/DALL-E-2024-09-04-17-54-55-An-intense-and-thrilling-scene-inspired-by-a-high-stakes-futuristic-es.webp",
     "description": "Step into a high-stakes adventure like no other! Sector 6ix is no ordinary escape room—it’s a high-tech battleground filled with six intense technical hurdles that will challenge your knowledge, creativity, and collaboration. Only those who can crack the code and break through the layers of digital puzzles and physical challenges will emerge victorious.",
     "startTime": "11:15",
@@ -399,7 +399,7 @@ export const NON_TECH_EVENTS = [
     "participation": "Team of 2"
   },
   {
-    "name": "Twenty 20",
+    "name": "Twenty 20 (IPL Auction)",
     "img": "https://i.postimg.cc/44b6mxyG/DALL-E-2024-09-04-19-03-24-A-scene-inspired-by-the-Arcane-web-series-style-depicting-characters-p.webp",
     "description": "Welcome to the Twenty 20 Auction: The Ultimate Cricket Strategy Showdown! This event is a thrilling blend of cricket knowledge, strategy, and auction skills. Participants will compete in multiple rounds to showcase their cricket knowledge, then engage in a live auction to build their dream team. This event will test your cricket IQ, strategic thinking, and ability to make the best choices under pressure.",
     "startTime": "09:30",
