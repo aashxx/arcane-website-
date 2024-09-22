@@ -94,7 +94,7 @@ const Register = () => {
   };
 
   const blockEventRegistration = (eventName) => {
-    const blockedEvents = ["Tech Quiz"];
+    const blockedEvents = ["Tech Quiz", "Paper Presentation"];
   
     if (blockedEvents.includes(eventName)) {
       toast.error("Registration closed for this event");
