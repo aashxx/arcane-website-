@@ -44,43 +44,43 @@ export const TECH_EVENTS = [
     },
     "participation": "Individual "
   },
-  {
-    "name": "Miniathon",
-    "img": "https://i.postimg.cc/0j6s3YG7/DALL-E-2024-09-04-17-43-20-A-team-of-four-characters-inspired-by-the-Arcane-web-series-style-part.webp",
-    "description": "A 4 - 5 hour hackathon designed for teams of two to create an MVP (Minimum Viable Product) solution to the given problem statement. MVPs are limited to software or embedded software projects. The event promotes innovation, technical skills, and rapid problem-solving in a collaborative environment.",
-    "startTime": "09:30",
-    "endTime": "12:30",
-    "winningCriteria": "Projects will be judged based on the following criteria: Innovation (10 points), Technical Complexity (15 points), Functionality (35 points), User Experience (5 points), and Relevance (35 points), totaling 100 points. Highest scoring team wins.",
-    "rules": [
-      "Each team must consist of exactly two members. Teams cannot change members once the event has started.",
-      "Teams must choose a problem statement from the provided list. No changes to the problem statement are allowed once selected.",
-      "Teams must bring their own computers and hardware components. Organizers will provide the basic resources.",
-      "Teams are free to use any programming languages, libraries, and tools, provided these align with the rules and project requirements.",
-      "Teams can use publicly available APIs, frameworks, and libraries. However, the core logic and implementation must be original work developed during the event.",
-      "Teams are encouraged to collaborate within their team but should not seek help from other teams or external sources during the Miniathon.",
-      "Projects must be original and created entirely during the Miniathon timeframe. Pre-existing code or projects are not permitted.",
-      "All projects must be submitted within the given timeframe. Late submissions will not be accepted.",
-      "The organizing team is not responsible for any hardware or software failures. Participants should be prepared with backups or alternative solutions.",
-      "All participants must follow health and safety guidelines provided by the organizers, especially if working with hardware components.",
-      "Participants must adhere to a code of conduct that promotes respect, collaboration, and professionalism. Any form of harassment, discrimination, or disruptive behavior is strictly prohibited.",
-      "Any violation of these rules may result in immediate disqualification from the Miniathon."
-    ],
-    "isMultipleRounds": false,
-    "coordinators": {
-      "student": [
-        { "name": "MUQEEMUDEEN", "phone": "9150768519" },
-        { "name": "MOHAMED AASHIR", "phone": "7358728447" },
-        { "name": "JOSHIKA T", "phone": "6281573188" },
-        { "name": "VIKAS S", "phone": "8778740714" }
-      ],
-      "faculty": [
-        "Dr. A.N. Arularasan",
-        "Mrs. H. Kamarunnisha",
-        "Mrs. D. Bala Gayathri"
-      ]
-    },
-    "participation": "Team of 2"
-  },
+  // {
+  //   "name": "Miniathon",
+  //   "img": "https://i.postimg.cc/0j6s3YG7/DALL-E-2024-09-04-17-43-20-A-team-of-four-characters-inspired-by-the-Arcane-web-series-style-part.webp",
+  //   "description": "A 4 - 5 hour hackathon designed for teams of two to create an MVP (Minimum Viable Product) solution to the given problem statement. MVPs are limited to software or embedded software projects. The event promotes innovation, technical skills, and rapid problem-solving in a collaborative environment.",
+  //   "startTime": "09:30",
+  //   "endTime": "12:30",
+  //   "winningCriteria": "Projects will be judged based on the following criteria: Innovation (10 points), Technical Complexity (15 points), Functionality (35 points), User Experience (5 points), and Relevance (35 points), totaling 100 points. Highest scoring team wins.",
+  //   "rules": [
+  //     "Each team must consist of exactly two members. Teams cannot change members once the event has started.",
+  //     "Teams must choose a problem statement from the provided list. No changes to the problem statement are allowed once selected.",
+  //     "Teams must bring their own computers and hardware components. Organizers will provide the basic resources.",
+  //     "Teams are free to use any programming languages, libraries, and tools, provided these align with the rules and project requirements.",
+  //     "Teams can use publicly available APIs, frameworks, and libraries. However, the core logic and implementation must be original work developed during the event.",
+  //     "Teams are encouraged to collaborate within their team but should not seek help from other teams or external sources during the Miniathon.",
+  //     "Projects must be original and created entirely during the Miniathon timeframe. Pre-existing code or projects are not permitted.",
+  //     "All projects must be submitted within the given timeframe. Late submissions will not be accepted.",
+  //     "The organizing team is not responsible for any hardware or software failures. Participants should be prepared with backups or alternative solutions.",
+  //     "All participants must follow health and safety guidelines provided by the organizers, especially if working with hardware components.",
+  //     "Participants must adhere to a code of conduct that promotes respect, collaboration, and professionalism. Any form of harassment, discrimination, or disruptive behavior is strictly prohibited.",
+  //     "Any violation of these rules may result in immediate disqualification from the Miniathon."
+  //   ],
+  //   "isMultipleRounds": false,
+  //   "coordinators": {
+  //     "student": [
+  //       { "name": "MUQEEMUDEEN", "phone": "9150768519" },
+  //       { "name": "MOHAMED AASHIR", "phone": "7358728447" },
+  //       { "name": "JOSHIKA T", "phone": "6281573188" },
+  //       { "name": "VIKAS S", "phone": "8778740714" }
+  //     ],
+  //     "faculty": [
+  //       "Dr. A.N. Arularasan",
+  //       "Mrs. H. Kamarunnisha",
+  //       "Mrs. D. Bala Gayathri"
+  //     ]
+  //   },
+  //   "participation": "Team of 2"
+  // },
   {
     "name": "Paper Presentation",
     "img": "https://i.postimg.cc/JzgMNdbM/DALL-E-2024-09-04-17-44-59-A-scene-featuring-a-team-of-two-characters-inspired-by-the-Arcane-web-s.webp",
