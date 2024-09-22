@@ -497,37 +497,37 @@ export const NON_TECH_EVENTS = [
     },
     "participation": "4 member team"
   },
-  {
-    "name": "Valorant",
-    "img": "https://i.postimg.cc/xqrjvz9R/DALL-E-2024-09-04-19-15-19-A-scene-inspired-by-the-Arcane-web-series-style-depicting-two-characte.webp",
-    "description": "The Valorant Tournament is an electrifying tournament that brings together the best teams from around various colleges to compete in Riot Games' popular tactical first-person shooter, Valorant. The tournament features high-stakes matches where precision, strategy, and teamwork are put to the ultimate test.",
-    "startTime": "09:30",
-    "endTime": "12:30",
-    "winningCriteria": "The team that wins all the matches will be the winner.",
-    "rules": [
-      "By participating in the Valorant Tournament, Participants acknowledge they will, without limitation, comply with the Tournament Rules and with the statements and decisions made by the Administration.",
-      "Every Participant acknowledges the right for the Administration to modify the rules and regulations for adjustments at any time without notice and if necessary, overrule those to ensure fair play and integrity throughout the Tournament.",
-      "Every Participant must be respectful towards Admins and other Participants. Insults and unfair or disrespectful behavior will not be tolerated and will be punished in accordance with these rules.",
-      "Participants must bring their own laptop.",
-      "The Tournament is a one-day Valorant tournament. The tournament will consist of a 14-16 team direct elimination.",
-      "All matches except the Finals will be a Best-of-One. The Finals will be played as a Best-of-Three."
-    ],
-    "isMultipleRounds": false,
-    "coordinators": {
-      "student": [
-        { "name": "MOHAMMED ASLAM", "phone": "7358448708" },
-        { "name": "FARHAAN", "phone": "9715772216" },
-        { "name": "THALIB ZAFIR", "phone": "6381957543" },
-        { "name": "DHOWFEEK HASAN", "phone": "7708072882" }
-      ],
-      "faculty": [
-        "Dr. E. Syed Mohamed",
-        "Mrs. T. Valliammal",
-        "Mrs. S. Hemalatha"
-      ]
-    },
-    "participation": "5 member team"
-  },
+  // {
+  //   "name": "Valorant",
+  //   "img": "https://i.postimg.cc/xqrjvz9R/DALL-E-2024-09-04-19-15-19-A-scene-inspired-by-the-Arcane-web-series-style-depicting-two-characte.webp",
+  //   "description": "The Valorant Tournament is an electrifying tournament that brings together the best teams from around various colleges to compete in Riot Games' popular tactical first-person shooter, Valorant. The tournament features high-stakes matches where precision, strategy, and teamwork are put to the ultimate test.",
+  //   "startTime": "09:30",
+  //   "endTime": "12:30",
+  //   "winningCriteria": "The team that wins all the matches will be the winner.",
+  //   "rules": [
+  //     "By participating in the Valorant Tournament, Participants acknowledge they will, without limitation, comply with the Tournament Rules and with the statements and decisions made by the Administration.",
+  //     "Every Participant acknowledges the right for the Administration to modify the rules and regulations for adjustments at any time without notice and if necessary, overrule those to ensure fair play and integrity throughout the Tournament.",
+  //     "Every Participant must be respectful towards Admins and other Participants. Insults and unfair or disrespectful behavior will not be tolerated and will be punished in accordance with these rules.",
+  //     "Participants must bring their own laptop.",
+  //     "The Tournament is a one-day Valorant tournament. The tournament will consist of a 14-16 team direct elimination.",
+  //     "All matches except the Finals will be a Best-of-One. The Finals will be played as a Best-of-Three."
+  //   ],
+  //   "isMultipleRounds": false,
+  //   "coordinators": {
+  //     "student": [
+  //       { "name": "MOHAMMED ASLAM", "phone": "7358448708" },
+  //       { "name": "FARHAAN", "phone": "9715772216" },
+  //       { "name": "THALIB ZAFIR", "phone": "6381957543" },
+  //       { "name": "DHOWFEEK HASAN", "phone": "7708072882" }
+  //     ],
+  //     "faculty": [
+  //       "Dr. E. Syed Mohamed",
+  //       "Mrs. T. Valliammal",
+  //       "Mrs. S. Hemalatha"
+  //     ]
+  //   },
+  //   "participation": "5 member team"
+  // },
   {
     "name": "FIFA",
     "img": "https://i.postimg.cc/Z5bt1csN/DALL-E-2024-09-04-19-12-55-A-competitive-scene-inspired-by-the-Arcane-web-series-style-depicting.webp",
