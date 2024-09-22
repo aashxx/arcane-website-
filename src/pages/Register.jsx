@@ -66,6 +66,10 @@ const Register = () => {
       return;
     }
 
+    if(blockEventRegistration(eventName)) {
+      return;
+    }
+
     const isEventSelected = participant.events.includes(eventName);
 
     // If the event is already selected, allow deselection
@@ -87,6 +91,16 @@ const Register = () => {
         return { ...prevParticipant, events: updatedEvents };
       });
     }
+  };
+
+  const blockEventRegistration = (eventName) => {
+    const blockedEvents = ["Tech Quiz"];
+  
+    if (blockedEvents.includes(eventName)) {
+      toast.error("Registration closed for this event");
+      return true;
+    }
+    return false;
   };
 
   // Determine if the event is selectable based on time overlap, but selected events are always selectable
