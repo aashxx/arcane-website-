@@ -7,6 +7,7 @@ import RequestCard from '../components/RequestCard';
 import Loader from '@/components/Loader';
 import { RegisterContext } from '@/contexts/RegisterContext';
 import ChangeUPI from '../components/ChangeUPI';
+import BlockRegistrations from '../components/BlockRegistrations';
 
 
 const Admin = () => {
@@ -51,6 +52,7 @@ const Admin = () => {
                 )
             }
             <ChangeUPI />
+            <BlockRegistrations />
         </main>
     )
 }

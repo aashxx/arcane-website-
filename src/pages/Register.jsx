@@ -18,6 +18,8 @@ import { Checkbox } from '@/components/ui/checkbox';
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import dayjs from 'dayjs';
 import Payment from '@/components/Payment';
+import { get, ref } from 'firebase/database';
+import { realdb } from '@/lib/firebase';
 
 const Register = () => {
 
@@ -60,6 +62,28 @@ const Register = () => {
     });
   };
 
+  const [blocked, setBlocked] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const blockedref = ref(realdb, `/events`);
+      const snapshot = await get(blockedref);
+      setBlocked(snapshot.val())
+    }
+
+    fetchData();
+  }, [])
+
+
+  const blockEventRegistration = (eventName) => {  
+
+    if (blocked && blocked[eventName] === "closed") {
+      toast.error("Registration closed for this event");
+      return true;
+    }
+    return false;
+  };
+
   // Handle event selection and deselection
   const handleEventClick = (eventName) => {
     if (!validatePersonalDetails()) {
@@ -91,16 +115,6 @@ const Register = () => {
         return { ...prevParticipant, events: updatedEvents };
       });
     }
-  };
-
-  const blockEventRegistration = (eventName) => {
-    const blockedEvents = ["Tech Quiz"];
-  
-    if (blockedEvents.includes(eventName)) {
-      toast.error("Registration closed for this event");
-      return true;
-    }
-    return false;
   };
 
   // Determine if the event is selectable based on time overlap, but selected events are always selectable
