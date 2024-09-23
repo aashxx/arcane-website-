@@ -190,16 +190,16 @@ const Register = () => {
       <section className="relative w-full h-[40vh] md:h-[50vh] bg-arcane-primary">
         <div style={{ background: "url('/images/semi-hero.png') no-repeat center center/cover", filter: "grayscale(100%)" }} className="absolute inset-0 opacity-60 bg-arcane-primary" />
         <BlurIn
-          word={'Registrations are closed.'} 
+          word={'Register Now'} 
           className={'absolute z-20 pt-14 font-bold text-center w-full text-white transform -translate-x-1/2 -translate-y-1/2 text-5xl md:text-8xl top-1/2 left-1/2 font-valorax'} 
         />
       </section>
-      {/* <section className='relative py-14 md:px-32 px-6'>
+      <section className='relative py-14 md:px-32 px-6'>
         <h3 className='text-white text-2xl font-valorax text-center'>Personal Details</h3>
         <div className='flex gap-5 items-center justify-center flex-wrap mt-10'>
           <Input name="fullName" value={participant.fullName} onChange={handleChange} placeholder={'Full Name'} />
           <Input name="college" value={participant.college} onChange={handleChange} placeholder={'College / University'} />
-          <aside className='md:w-[48%] w-full relative'> */}
+          <aside className='md:w-[48%] w-full relative'>
             {/* {participant.emailVerified ? (
               <aside className='bg-arcane-primary rounded-full absolute p-1 right-3 top-2'>
                 <FaCheck className='text-white' />
@@ -260,7 +260,7 @@ const Register = () => {
                 {/* )}
               </>
             )} */}
-            {/* <input className={'flex h-10 w-full rounded-md font-expletus-sans pr-16 bg-[#1c1c1c] px-3 py-2 text-md file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-[gray] outline-none text-white disabled:cursor-not-allowed disabled:opacity-50 focus:border focus:border-arcane-primary'} name="email" value={participant.email} onChange={handleChange} placeholder={'Email'} />
+            <input className={'flex h-10 w-full rounded-md font-expletus-sans pr-16 bg-[#1c1c1c] px-3 py-2 text-md file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-[gray] outline-none text-white disabled:cursor-not-allowed disabled:opacity-50 focus:border focus:border-arcane-primary'} name="email" value={participant.email} onChange={handleChange} placeholder={'Email'} />
           </aside>
           <Input name="phone" value={participant.phone} onChange={handleChange} placeholder={'Phone Number'} />
           <Input name="degree" value={participant.degree} onChange={handleChange} placeholder={'Degree'} />
@@ -407,25 +407,25 @@ const Register = () => {
                       <DrawerDescription className="text-center">Date: {dayjs().format('DD/MM/YYYY')}</DrawerDescription>
                     </DrawerHeader>
                     <div className="w-full mt-6">
-                      {/* Technical Events */}
-                      {/* {participant.events.filter(event => TECH_EVENTS.some(e => e.name === event)).length > 0 && (
+                      {/* {/* Technical Events */}
+                      {participant.events.filter(event => TECH_EVENTS.some(e => e.name === event)).length > 0 && (
                         <div className="flex justify-between gap-4 text-sm mt-2">
                           <aside className='w-[70%]'>Technical Events ({participant.events.filter(event => TECH_EVENTS.some(e => e.name === event)).join(', ')})</aside>
                           <aside>INR {participant.events.filter(event => TECH_EVENTS.some(e => e.name === event)).length > 0 && participant.events.filter(event => NON_TECH_EVENTS.some(e => e.name === event)).length > 0 ? '100.00' : '150.00'}</aside>
                         </div>
-                      )} */}
+                      )}
 
                       {/* Non-Technical Events */}
-                      {/* {participant.events.filter(event => NON_TECH_EVENTS.some(e => e.name === event)).length > 0 && (
+                      {participant.events.filter(event => NON_TECH_EVENTS.some(e => e.name === event)).length > 0 && (
                         <div className="flex justify-between gap-4 text-sm mt-2">
                           <aside className='w-[70%]'>Non-Technical Events ({participant.events.filter(event => NON_TECH_EVENTS.some(e => e.name === event)).join(', ')})</aside>
                           <aside>INR {participant.events.filter(event => TECH_EVENTS.some(e => e.name === event)).length > 0 && participant.events.filter(event => NON_TECH_EVENTS.some(e => e.name === event)).length > 0 ? '100.00' : '150.00'}</aside>
                         </div>
-                      )} */}
-                    {/* </div> */}
+                      )}
+                    </div>
 
                     {/* Total Price */}
-                    {/* <div className="w-full mt-6 border-t flex items-center justify-between border-gray-600 pt-4">
+                    <div className="w-full mt-6 border-t flex items-center justify-between border-gray-600 pt-4">
                       <h4 className="text-lg font-bold">Total</h4>
                       <h4 className="text-arcane-primary text-2xl font-bold">INR {calculatePrice()}.00</h4>
                     </div>
@@ -443,8 +443,8 @@ const Register = () => {
                         <Button variant="outline" className="border-arcane-primary text-arcane-primary hover:text-arcane-primary px-12 py-2 text-md">Close</Button>
                       </DrawerClose>
                     </DrawerFooter>
-                  </div> */}
-                {/* </DrawerContent>
+                  </div>
+                </DrawerContent>
               </Drawer>
             </div>
             <Dialog>
@@ -455,9 +455,9 @@ const Register = () => {
               </DialogTrigger>
               <Payment />
             </Dialog>
-          </section> */}
-        {/* ) */}
-      {/* // } */}
+          </section>
+        )
+      } 
     </main>
   );
 }
